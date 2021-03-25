@@ -35,12 +35,11 @@ img {
 }
 
 body {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-family: $fontOpenSans;
   line-height: 1.6;
   overflow-x: hidden;
-  letter-spacing:2px;
-  color:red;
+  letter-spacing: 1.2px;
 }
 
 h1 {
@@ -48,7 +47,7 @@ h1 {
   z-index: 100;
   line-height: 1.6;
   font-family:$fontRoboto;
-  color:$secondaryColor;
+  color: rgb(32, 51, 92);
 }
 
 h2 {
@@ -64,3 +63,4 @@ h3 {
 ul {
   display:flex;
 }
+

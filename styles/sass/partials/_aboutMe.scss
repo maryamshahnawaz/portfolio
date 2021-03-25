@@ -1,35 +1,48 @@
 .about-section {
-  padding: 10rem 1rem;
+  padding: 20rem 1rem;
   text-align: center;
-  height: 100vh;
-  color: $secondaryColor;
+  color:rgb(32, 51, 92);
 }
 
 .about-section-flex {
   display: flex;
   justify-content: space-between;
+  @include tabletMQ {
+    display:block;
+  }
 }
 
 .about-section h2 {
   margin: 2rem 0;
+  @include tabletMQ {
+    margin:4rem 0;
+  }
 }
 
 .about-me {
-  width: 35%;
+  width: 30%;
+  min-width: 350px;
+  @include tabletMQ {
+    margin: 2rem auto;
+    width:50%;
 }
-
+}
 .about-me img {
   width: 100%;
-  min-width: 300px;
   border-radius: 50%;
+  box-shadow: 30px -30px #da695d;
+  @include tabletMQ {
+    box-shadow: 15px -15px #da695d;
+  }
 }
 
 .desc-about-me {
-  width: calc(100% - 40%);
-  margin: 2%;
+  width: calc(100% - 37%);
+  margin-left: 6%;
   padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: left;
+  @include tabletMQ {
+    width:100%;
+    margin-left: 0;
+  }
 }

@@ -1,15 +1,18 @@
 .projects {
   background-color:$primaryColor;
-  color: $projectFontColor;
+  color: rgb(32, 51, 92);
   padding: 15rem 0;
 }
 
 .projects-flex {
   display: grid;
   // grid-template-columns: repeat(2, 1fr);
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 2rem;
   padding: 10rem 0;
+  @include tabletMQ2 {
+    display: block;
+  }
 }
 
 div.projects-flex:nth-child(even) div {
@@ -20,9 +23,7 @@ div.projects-flex:nth-child(even) div {
   order: 2;
 }
 
-.projects-img img{
-  min-width: 600px;
-}
+
 
 .projects-info {
   padding: 2rem;
@@ -36,6 +37,7 @@ div.projects-flex:nth-child(even) div {
 .skillsUsed li {
   margin-right: 1.5rem;
   padding: 0 1rem;
+  color:#da695d;
 }
 .projectLinks {
   margin-top: 2rem;
@@ -43,7 +45,11 @@ div.projects-flex:nth-child(even) div {
 .projectLinks a {
   text-decoration: none;
   margin-right: 1.5rem;
-  padding: 1.5rem;
-  color: $projectLiveButtonColor;
-  background-color: $projectLiveButtonBackground;
+  padding: 1.5rem; 
+  background-color:#da695d;
+  color:white;
+}
+ 
+span a {
+  color:#da695d;;
 }

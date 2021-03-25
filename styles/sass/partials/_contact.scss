@@ -1,10 +1,13 @@
 .contact-section {
   width: 100%;
   padding: 50px 0;
+  background-color:#da695d;
+  color:white;
 }
 
 .contact-section h1 {
   text-align: center;
+  color:white;
 }
 
 .contact-form {
@@ -25,8 +28,9 @@
 
 .form-control,
 textarea {
-  background-color: #cdf5f3;
-  color: #343d3d;
+  // background-color: #cdf5f3;
+  background-color: #fff;
+  color:rgb(32, 51, 92);
   width: 70%;
   margin-bottom: 20px;
   padding: 2rem;
@@ -47,20 +51,19 @@ textarea {
 
 .list-item {
   line-height: 4;
-  color: $secondaryColor;
+  color:white;
 }
 
 .list-item i {
-  color: $secondaryColor;
+  color: white;
 }
 
 .contact-text {
   letter-spacing: 1.9px;
-  color:rgb(161, 157, 157);
+  color:white;
 }
-
 .contact-text a {
-  color: rgb(161, 157, 157);
+  color: white;
   text-decoration: none;
   transition-duration: 0.2s;
 }
@@ -92,8 +95,7 @@ textarea {
   margin: 10px auto;
   line-height: 85px;
   border-radius: 50%;
-  color: #e74d3c;
-  background-color: #a6e8e5;
+  background-color:rgb(32, 51, 92);
   cursor: pointer;
   transition: all .2s ease-in-out;
 }
@@ -117,11 +119,15 @@ textarea {
 }
 
 hr {
-  border-color:$secondaryColor;
+  border-color:white;
+}
+
+.contact-icon i {
+  color:white;
 }
 
 .send-button {
-  background-color: $secondaryColor;
+  background-color:rgb(32, 51, 92);
   border: 0;
   margin-top: 15px;
   margin-bottom: 30px;
@@ -129,7 +135,7 @@ hr {
   width: 70%;
   overflow: hidden;
   transition: all .2s ease-in-out;
-  color: #67d0cb;
+  color: white;
   padding:1.5rem;
 }
 
@@ -140,6 +146,7 @@ hr {
 
 .button i {
   font-size: 3rem;
+  color:white;
 }
 
 .send-text {
@@ -151,3 +158,5 @@ hr {
   transform: translate3d(0px, -29px, 0px);
   color: #a6e8e5;
 }
+
+// rgb(247, 75, 56);
