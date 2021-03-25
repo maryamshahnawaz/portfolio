@@ -1,0 +1,153 @@
+.contact-section {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.contact-section h1 {
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form {
+  max-width: 48%;
+  width: 100%;
+}
+
+.contact-container {
+  max-width: calc(100% - 52%);
+  width: 80%;
+  margin: 2%;
+}
+
+.form-control,
+textarea {
+  background-color: #cdf5f3;
+  color: #343d3d;
+  width: 70%;
+  margin-bottom: 20px;
+  padding: 2rem;
+  border: none;
+}
+
+.form-flex {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+/* Location, Phone, Email Section */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.list-item {
+  line-height: 4;
+  color: $secondaryColor;
+}
+
+.list-item i {
+  color: $secondaryColor;
+}
+
+.contact-text {
+  letter-spacing: 1.9px;
+  color:rgb(161, 157, 157);
+}
+
+.contact-text a {
+  color: rgb(161, 157, 157);
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  color: #a6e8e5;
+  text-decoration: none;
+}
+
+/* Social Media Icons */
+.social-media-list {
+  position: relative;
+  font-size: 2.3rem;
+  text-align: center;
+  width: 100%;
+}
+
+.social-media-list li a {
+  color: $secondaryColor;
+    }
+
+.social-media-list li {
+  position: relative;
+  top: 0;
+  left: -20px;
+  display: inline-block;
+  height: 80px;
+  width: 80px;
+  margin: 10px auto;
+  line-height: 85px;
+  border-radius: 50%;
+  color: #e74d3c;
+  background-color: #a6e8e5;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list i:hover {
+  color:$baseColor;
+}
+
+.social-media-list li:hover {
+  background-color: rgba($color: #aeebfe, $alpha: 1.0);
+}
+
+.social-media-list li:hover:after {
+  opacity: 1;
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+}
+
+.social-media-list li:hover a {
+  color: #66d0cc;
+}
+
+hr {
+  border-color:$secondaryColor;
+}
+
+.send-button {
+  background-color: $secondaryColor;
+  border: 0;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  height: 50px;
+  width: 70%;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+  color: #67d0cb;
+  padding:1.5rem;
+}
+
+.button {
+  // width: 90%;
+  transition: all .2s ease-in-out;
+}
+
+.button i {
+  font-size: 3rem;
+}
+
+.send-text {
+  display: block;
+  margin-top: 10px;
+}
+
+.button:hover {
+  transform: translate3d(0px, -29px, 0px);
+  color: #a6e8e5;
+}

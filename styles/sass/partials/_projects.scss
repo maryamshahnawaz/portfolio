@@ -1,0 +1,49 @@
+.projects {
+  background-color:$primaryColor;
+  color: $projectFontColor;
+  padding: 15rem 0;
+}
+
+.projects-flex {
+  display: grid;
+  // grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-gap: 2rem;
+  padding: 10rem 0;
+}
+
+div.projects-flex:nth-child(even) div {
+  padding: 2rem;
+}
+
+.projects-flex:nth-child(even) .projects-img {
+  order: 2;
+}
+
+.projects-img img{
+  min-width: 600px;
+}
+
+.projects-info {
+  padding: 2rem;
+  text-align: left;
+}
+
+.skillsUsed {
+  margin-top: 0.50rem;
+}
+
+.skillsUsed li {
+  margin-right: 1.5rem;
+  padding: 0 1rem;
+}
+.projectLinks {
+  margin-top: 2rem;
+}
+.projectLinks a {
+  text-decoration: none;
+  margin-right: 1.5rem;
+  padding: 1.5rem;
+  color: $projectLiveButtonColor;
+  background-color: $projectLiveButtonBackground;
+}

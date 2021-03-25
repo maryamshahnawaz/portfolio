@@ -4,9 +4,342 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome kit -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
+  <!-- Devicon Icon Kit -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
+
+  <!-- Animation library -->
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Styles Sheet -->
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <!-- Google font awesome -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Open+Sans&family=Oswald&display=swap"
+    rel="stylesheet">
+
   <title>Portfolio</title>
 </head>
 <body>
-  <h1>My Portfolio</h1>
+
+  <!-- Header Section -->
+  <header>
+    <div class="intro" data-aos="flip-down" data-aos-duration="1500" data-aos-easing="ease-in-sine">
+      <!-- <div class="intro"> -->
+      <h1>Hello, I'm Maryam</h1>
+      <p>Front-End Developer</p>
+      <p>"writing the code that will run our future"</p>
+    </div>
+    <div class="scroll-down">
+    </div>
+    <div class="animation-area">
+      <ul class="box-area">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- About Me Section -->
+    <section class="about-section" data-aos="fade-up" data-aos-easing="ease" data-aos-duration="1500">
+      <!-- <section class="about-section"> -->
+      <h2>About Me</h2>
+      <div class="wrapper about-section-flex">
+        <div class="about-me">
+          <img src="./assets/Maryam.png" alt="Maryam's Front-end Web development Portfolio" class="maryam">
+        </div>
+        <div class="desc-about-me">
+          <p>Hi! My name is Maryam Shahnawaz, former dispatcher turned web-developer from a dull day job taking to
+            writing lines of
+            codes and bringing my imagination to life, my passion is combining code and my creativity to create websites
+            and apps
+            that can convey my passion form work. One of the best parts of coding is that it’s a universal language that
+            everyone
+            can read and speak regardless of cultural backgrounds it’s something that can truly unite people. I’m eager
+            to find
+            employment and pour all my ideas and effort into creating the best websites I can. Drop me a line and/or
+            your favourite
+            restaurant in GTA in the contact form below or check me out at:</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+      <div class="wrapper">
+        <h2>My Skills</h2>
+        <div class="skill-icons" aos-init aos-animate data-aos="fade-up" data-aos-duration="1500">
+
+          <div class="individual-skill-section">
+            <i class="devicon-html5-plain skill" aria-hidden="true"></i>
+            <span class="iconName">HTML5</span>
+            <span class="sr-only">H.T.M.L 5</span>
+          </div>
+
+          <div class="individual-skill-section">
+            <i class="devicon-css3-plain skill" aria-hidden="true"></i>
+            <span class="iconName">CSS3</span>
+            <span class="sr-only">C.S.S 3</span>
+          </div>
+          <div class="individual-skill-section">
+            <i class="devicon-sass-original skill" aria-hidden="true"></i>
+            <span class="iconName">SASS</span>
+            <span class="sr-only">S.A.S.S</span>
+          </div>
+          <div class="individual-skill-section">
+            <i class="devicon-javascript-plain skill" aria-hidden="true"></i>
+            <span class="iconName block">Java Script</span>
+            <span class="sr-only">Javascript</span>
+          </div>
+          <div class="individual-skill-section">
+            <i class="devicon-jquery-plain skill" aria-hidden="true"></i>
+            <span class="iconName">Jquery</span>
+            <span class="sr-only">Jquery</span>
+          </div>
+          <div class="individual-skill-section">
+            <i class="devicon-react-original skill" aria-hidden="true"></i>
+            <span class="iconName">React</span>
+            <span class="sr-only">React</span>
+          </div>
+          <div class="individual-skill-section">
+            <i class="devicon-github-original skill" aria-hidden="true"></i>
+            <span class="iconName">GitHub</span>
+            <span class="sr-only">Github</span>
+          </div>
+          <div class="individual-skill-section">
+            <i class="devicon-visualstudio-plain skill" aria-hidden="true"></i>
+            <span class="iconName">Visual Studio</span>
+            <span class="sr-only">Visual Studio</span>
+          </div>
+          <div class="individual-skill-section">
+            <i class="devicon-firebase-plain skill" aria-hidden="true"></i>
+
+            <span class="iconName">Firebase</span>
+            <span class="sr-only">Firebase</span>
+          </div>
+          <div class="individual-skill-section">
+            <i class="fas fa-mobile skill" aria-hidden="true"></i>
+            <span class="iconName" aria-hidden="true">Responsive Design</span>
+            <span class="sr-only">Responsive Design</span>
+          </div>
+          <div class="individual-skill-section">
+            <i class="fas fa-universal-access skill" aria-hidden="true"></i>
+            <span class="iconName">Accessibility</span>
+            <span class="sr-only">Accessibility</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section class="projects">
+      <div class="wrapper">
+
+        <!-- NUMBER ONE PROJECT-->
+        <div class="projects-flex">
+          <div class="projects-img" data-aos="fade-right" data-aos-duration="1500">
+            <img src="./assets/page-turner-1.png" alt="">
+          </div>
+          <div class="projects-info" data-aos="fade-left" data-aos-duration="1500">
+            <h3>Page Turners</h3>
+            <p>Page-turner is a reading list app which has 3 lists that help you keep track of which books your
+              currently reading,
+              which books you’ve finished reading and which books you’ve favourited. This project uses the Google book
+              api and was
+              created in collaboration with Tom Milton, Jess Lau and Ragulan Ravi
+            </p>
+            <ul class="skillsUsed">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>React</li>
+              <li>Firebase</li>
+              <li>Api</li>
+            </ul>
+            <ul class="projectLinks">
+              <li>
+                <a href="https://github.com/Page-Turners/project-4-page-turners">Github</a>
+              </li>
+              <li><a href="https://page-turner.netlify.app/">View Live</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- NUMBER TWO PROJECT-->
+        <div class="projects-flex">
+          <div class="projects-img" data-aos="fade-left" data-aos-duration="1000">
+            <img src="./assets/flix-finder-1.png" alt="">
+          </div>
+          <div class="projects-info" data-aos="fade-right" data-aos-duration="1000">
+            <h3>Flix Finder Movie</h3>
+            <p>Flix Finder is a movie database app that allows you to search up movies by name and genre which then
+              turns up hundreds
+              of results and if a movie peeks your interest you can click on it for a short synopsis. This app uses the
+              TMDB database
+              and was created in collaboration with <span><a href="https://melissalocquiao.com/">Melissa
+                  Locquiao</a></span>
+            </p>
+            <ul class="skillsUsed">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Sass</li>
+              <li>JavaScript</li>
+              <li>Api</li>
+            </ul>
+            <ul class="projectLinks">
+              <li>
+                <a href="https://github.com/maryam-melissa">Github</a>
+              </li>
+              <li><a href="https://flix-finder-app.netlify.app/landingpage">View Live</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- NUMBER THREE PROJECT-->
+        <div class="projects-flex">
+          <div class="projects-img" data-aos="fade-right" data-aos-duration="1000">
+            <img src="./assets/plant-store-1.png" alt="">
+          </div>
+          <div class="projects-info" data-aos="fade-left" data-aos-duration="1000">
+            <h3>Plant House App</h3>
+            <p>Plant House is an e-commerce app that allows users to browse through a selection of artificial plants and
+              add the ones
+              they like to a checkout cart that updates in real time.</p>
+            <ul class="skillsUsed">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Sass</li>
+              <li>React</li>
+              <li>Firebase</li>
+            </ul>
+            <ul class="projectLinks">
+              <li>
+                <a href="https://github.com/maryamshahnawaz/plant-house-app">Github</a>
+              </li>
+              <li><a href="https://plant-house.netlify.app/">View Live</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- NUMBER FOUR PROJECT-->
+        <div class="projects-flex">
+          <div class="projects-img" data-aos="fade-left" data-aos-duration="1500">
+            <img src="./assets/under-the-sea-1.png" alt="">
+          </div>
+          <div class="projects-info" data-aos="fade-right" data-aos-duration="1500">
+            <h3>Under The Sea</h3>
+            <p>Under the sea is the end result of the translation of a static image into a fully functional website with
+              working
+              buttons and forms. This website was made in collaboration <span><a href="https://blairecodes.com ">Blaire
+                  Porter </a></span></p>
+
+            <ul class="skillsUsed">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Sass</li>
+            </ul>
+            <ul class="projectLinks">
+              <li>
+                <a href="https://github.com/blaire-maryam/blaire-maryam-project-one">Github</a>
+              </li>
+              <li><a href="https://under-the-sea-my-site.netlify.app/">View Live</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <h1>GET IN TOUCH!</h1>
+      <div class="contact-form wrapper">
+        <form class="form">
+
+          <div class="form-flex">
+            <label for="name">Name </label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            <label for="email">Email </label>
+            <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
+          </div>
+          <div class="form-flex">
+            <label for="message-me">Message me</label>
+            <textarea class="form-control" rows="10" placeholder="Message me here" id="message-me"></textarea>
+          </div>
+          <button class="btn  send-button" type="submit">
+            <div class="button">
+              <i class="fa fa-paper-plane zoo" aria-hidden="true"></i><span class="send-text">SEND</span>
+            </div>
+          </button>
+        </form>
+        <div class="contact-container">
+          <ul class="contact-list">
+            <li class="list-item">
+              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+              <span class="contact-text place">Toronto |
+                Ontario</span></i>
+            </li>
+
+            <li class="list-item">
+              <i class="fas fa-phone" aria-hidden="true"></i>
+              <span class="contact-text phone"><a href="tel:647-464-5466"
+                  title="Give me a call">647-464-5466</a></span></i>
+            </li>
+
+            <li class="list-item">
+              <i class="fas fa-envelope-square" aria-hidden="true"></i>
+              <span class="contact-text gmail">
+                <a href="mailto:maryamshahnawaz44@gmail.com" title="Send me an email">maryamshahnawaz44@gmail.com</a>
+              </span>
+              </i>
+            </li>
+          </ul>
+
+          <hr>
+          <ul class="social-media-list">
+            <li>
+              <a href="https://github.com/maryamshahnawaz" class="contact-icon">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/maryam-shahnawaz-259728203/" class="contact-icon">
+                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/MaryamShahnawa2" class="contact-icon">
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://codepen.io/maryum-shahnawaz/pen/KKNPqpr" class="contact-icon">
+                <i class="fab fa-codepen" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+          <hr>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Mady by Maryam Copy Right@ <a href="https://junocollege.com/">Juno</a>
+      College</p>
+  </footer>
+  <!-- Animation Library Link -->
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 400
+    });
+  </script>
 </body>
 </html>
