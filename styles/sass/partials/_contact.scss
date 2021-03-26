@@ -148,7 +148,10 @@ hr {
 }
 
 .contact-icon i {
-  color:$baseColor
+  color:$baseColor;
+  @include smallMQ{
+    font-size:3rem;
+  }
 }
 
 .send-button {

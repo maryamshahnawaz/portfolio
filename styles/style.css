@@ -553,7 +553,7 @@ header h1 {
 }
 
 .skill:hover {
-  color: #09a8bd;
+  color: #53fefe;
 }
 
 .projects {
@@ -593,29 +593,44 @@ div.projects-flex:nth-child(even) div {
 }
 
 .skillsUsed {
-  margin-top: 0.50rem;
+  margin: 1rem 0;
 }
 
 .skillsUsed li {
   margin-right: 1.5rem;
   padding: 0 1rem;
-  color: #da695d;
+  color: #20335c;
 }
 
 .projectLinks {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .projectLinks a {
   text-decoration: none;
   margin-right: 1.5rem;
-  padding: 1.5rem;
-  background-color: #da695d;
-  color: white;
+  padding: 1rem;
+  background-color: #20335c;
+  color: #FFFFFF;
+  font-size: 2.5rem;
+}
+
+.projectLinks a:hover {
+  background-color: rgba(48, 46, 77, 0.9);
 }
 
 span,
 span a {
+  color: #da695d;
+}
+
+i {
+  font-size: 5rem;
+  -webkit-transition: all 0.6 ease;
+  transition: all 0.6 ease;
+}
+
+i:hover {
   color: #da695d;
 }
 
@@ -681,6 +696,18 @@ body {
   overflow-x: hidden;
 }
 
+@media (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
 @media (max-width: 550px) {
   body {
     overflow-x: hidden;
@@ -688,7 +715,7 @@ body {
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: 8.5rem;
   z-index: 100;
   line-height: 1.6;
   font-family: "Barlow Condensed", sans-serif;
@@ -920,6 +947,12 @@ hr {
 
 .contact-icon i {
   color: #FFFFFF;
+}
+
+@media (max-width: 550px) {
+  .contact-icon i {
+    font-size: 3rem;
+  }
 }
 
 .send-button {

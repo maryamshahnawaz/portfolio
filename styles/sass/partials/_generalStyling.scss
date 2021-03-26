@@ -39,13 +39,20 @@ body {
   font-family: $fontOpenSans;
   line-height: 1.6;
   overflow-x: hidden;
+
+  @include tabletMQ {
+    overflow-x: hidden;
+  }
+  @include mobiletMQ {
+    overflow-x: hidden;
+  }
   @include smallMQ {
     overflow-x: hidden;
   }
 }
 
 h1 {
-  font-size: 8rem;
+  font-size: 8.5rem;
   z-index: 100;
   line-height: 1.6;
   font-family:$fontRoboto;
