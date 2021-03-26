@@ -548,6 +548,8 @@ header h1 {
 .skill {
   color: #FFFFFF;
   font-size: 10rem;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 
 .skill:hover {
@@ -677,7 +679,6 @@ body {
   font-family: "Open Sans", sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
-  letter-spacing: 1.2px;
 }
 
 @media (max-width: 550px) {
