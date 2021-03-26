@@ -49,8 +49,7 @@
 
   <main>
     <!-- About Me Section -->
-    <section class="about-section" data-aos="fade-down" data-aos-easing="ease" data-aos-duration="1500">
-      <!-- <section class="about-section"> -->
+    <section class="about-section" data-aos="zoom-in-up" data-aos-easing="ease" data-aos-duration="1500">
       <h2>About Me</h2>
       <div class="wrapper about-section-flex">
         <div class="about-me">
@@ -146,7 +145,7 @@
         <!-- NUMBER ONE PROJECT-->
         <div class="projects-flex" data-aos="fade-right" data-aos-duration="1500">
           <div class="projects-img">
-            <img src="./assets/page-turner-1.png" alt="">
+            <img src="./assets/page-turner-1.png" alt="An image of Page Turner app">
           </div>
           <div class="projects-info">
             <h3>Page Turners</h3>
@@ -154,7 +153,7 @@
               currently reading,
               which books you’ve finished reading and which books you’ve favourited. This project uses the Google book
               api and was
-              created in collaboration with Tom Milton, Jess Lau and Ragulan Ravi
+              created in collaboration with <span> Tom Milton, Jess Lau and Ragulan Ravi</span>
             </p>
             <ul class="skillsUsed">
               <li>HTML5</li>
@@ -175,7 +174,7 @@
         <!-- NUMBER TWO PROJECT-->
         <div class="projects-flex" data-aos="fade-left" data-aos-duration="1000">
           <div class="projects-img">
-            <img src="./assets/flix-finder-1.png" alt="">
+            <img src="./assets/flix-finder-1.png" alt="An image of movie finder app called flix finder">
           </div>
           <div class="projects-info">
             <h3>Flix Finder Movie</h3>
@@ -183,7 +182,7 @@
               turns up hundreds
               of results and if a movie peeks your interest you can click on it for a short synopsis. This app uses the
               TMDB database
-              and was created in collaboration with <span><a href="https://melissalocquiao.com/">Melissa
+              and was created in collaboration with <span><a href="https://melissalocquiao.com/">@Melissa
                   Locquiao</a></span>
             </p>
             <ul class="skillsUsed">
@@ -205,7 +204,7 @@
         <!-- NUMBER THREE PROJECT-->
         <div class="projects-flex" data-aos="fade-right" data-aos-duration="1000">
           <div class="projects-img">
-            <img src="./assets/plant-store-1.png" alt="">
+            <img src="./assets/plant-store-1.png" alt="An image of e-commerce plant house app">
           </div>
           <div class="projects-info">
             <h3>Plant House App</h3>
@@ -231,13 +230,13 @@
         <!-- NUMBER FOUR PROJECT-->
         <div class="projects-flex" data-aos="fade-left" data-aos-duration="1500">
           <div class="projects-img">
-            <img src="./assets/under-the-sea-1.png" alt="">
+            <img src="./assets/under-the-sea-1.png" alt="An image of website called under the sea its about aquarium">
           </div>
           <div class="projects-info">
             <h3>Under The Sea</h3>
             <p>Under the sea is the end result of the translation of a static image into a fully functional website with
               working
-              buttons and forms. This website was made in collaboration <span><a href="https://blairecodes.com ">Blaire
+              buttons and forms. This website was made in collaboration <span><a href="https://blairecodes.com ">@Blaire
                   Porter </a></span></p>
 
             <ul class="skillsUsed">
@@ -260,11 +259,10 @@
     <section class="contact-section">
       <h1>GET IN TOUCH!</h1>
       <div class="contact-form wrapper">
-        <form class="form">
-
+        <form class="form" name="contact" method="POST" data-netlify="true">
           <div class="form-flex">
             <label for="name">Name </label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
             <label for="email">Email </label>
             <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
           </div>
@@ -330,6 +328,8 @@
       </div>
     </section>
   </main>
+
+  <!-- Footer Section -->
   <footer>
     <p>Made by Maryam Copy Right@ <a href="https://junocollege.com/">Juno</a>
       College</p>

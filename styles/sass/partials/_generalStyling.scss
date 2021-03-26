@@ -40,6 +40,9 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   letter-spacing: 1.2px;
+  @include smallMQ {
+    overflow-x: hidden;
+  }
 }
 
 h1 {
@@ -47,17 +50,26 @@ h1 {
   z-index: 100;
   line-height: 1.6;
   font-family:$fontRoboto;
-  color: rgb(32, 51, 92);
+  color: $secondaryColor;
+  @include smallMQ{
+    font-size:4rem;
+  }
 }
 
 h2 {
   font-size: 7rem;
   font-family:$fontOswald;
+  @include smallMQ{
+    font-size:3rem;
+  }
 }
 
 h3 {
   font-size: 4rem;
   font-family:$fontRoboto;
+  @include smallMQ{
+    font-size:3rem;
+  }
 }
 
 ul {

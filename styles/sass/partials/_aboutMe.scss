@@ -1,7 +1,7 @@
 .about-section {
   padding: 20rem 1rem;
   text-align: center;
-  color:rgb(32, 51, 92);
+  color:$secondaryColor;
 }
 
 .about-section-flex {
@@ -25,14 +25,21 @@
   @include tabletMQ {
     margin: 2rem auto;
     width:50%;
+  }
+  @include smallMQ {
+      width:50%;
+    }
 }
-}
+
 .about-me img {
   width: 100%;
   border-radius: 50%;
-  box-shadow: 30px -30px #da695d;
+  box-shadow: 30px -30px $primaryColor;
   @include tabletMQ {
-    box-shadow: 15px -15px #da695d;
+    box-shadow: 15px -15px $primaryColor;
+  }
+  @include smallMQ {
+    width:80%;
   }
 }
 

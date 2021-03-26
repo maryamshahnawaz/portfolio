@@ -1,7 +1,11 @@
 .skills-section {
     padding: 6rem 0;
-    background-color:#da695d;
-    color: white;
+    background-color:$primaryColor;
+    color: $baseColor;
+}
+
+.iconName {
+    color:white;
 }
 
 .skills-section h2 {
@@ -26,6 +30,9 @@
 }
 
 .skill {
-    color: #cdf5f3;
+    color: $baseColor;
     font-size: 10rem;
+    &:hover {
+        color:rgb(9, 168, 189);
+    }
 }

@@ -245,7 +245,7 @@ header {
 }
 
 .animation-area {
-  background-color: white;
+  background-color: #FFFFFF;
   width: 100%;
   height: 100vh;
 }
@@ -266,8 +266,8 @@ header {
   width: 25px;
   height: 25px;
   background: #f74b38;
-  -webkit-animation: animate 20s linear infinite;
-          animation: animate 20s linear infinite;
+  -webkit-animation: animate 10s linear infinite;
+          animation: animate 10s linear infinite;
   bottom: -150px;
 }
 
@@ -408,7 +408,12 @@ header {
 }
 
 header p {
+  font-size: 2.5rem;
   color: #20335c;
+}
+
+header h1 {
+  text-shadow: 2px 5px 10px peachpuff;
 }
 
 .about-section {
@@ -454,6 +459,12 @@ header p {
   }
 }
 
+@media (max-width: 550px) {
+  .about-me {
+    width: 50%;
+  }
+}
+
 .about-me img {
   width: 100%;
   border-radius: 50%;
@@ -465,6 +476,12 @@ header p {
   .about-me img {
     -webkit-box-shadow: 15px -15px #da695d;
             box-shadow: 15px -15px #da695d;
+  }
+}
+
+@media (max-width: 550px) {
+  .about-me img {
+    width: 80%;
   }
 }
 
@@ -485,6 +502,10 @@ header p {
 .skills-section {
   padding: 6rem 0;
   background-color: #da695d;
+  color: #FFFFFF;
+}
+
+.iconName {
   color: white;
 }
 
@@ -525,12 +546,16 @@ header p {
 }
 
 .skill {
-  color: #cdf5f3;
+  color: #FFFFFF;
   font-size: 10rem;
 }
 
+.skill:hover {
+  color: #09a8bd;
+}
+
 .projects {
-  background-color: white;
+  background-color: #da695d;
   color: #20335c;
   padding: 15rem 0;
 }
@@ -587,6 +612,7 @@ div.projects-flex:nth-child(even) div {
   color: white;
 }
 
+span,
 span a {
   color: #da695d;
 }
@@ -595,8 +621,15 @@ footer {
   padding: 2rem;
   background-color: #20335c;
   text-align: center;
-  color: white;
+  color: #FFFFFF;
   font-size: 3rem;
+}
+
+@media (max-width: 550px) {
+  footer {
+    font-size: 2rem;
+    padding: 1rem;
+  }
 }
 
 footer a {
@@ -647,6 +680,12 @@ body {
   letter-spacing: 1.2px;
 }
 
+@media (max-width: 550px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
 h1 {
   font-size: 8rem;
   z-index: 100;
@@ -655,14 +694,32 @@ h1 {
   color: #20335c;
 }
 
+@media (max-width: 550px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
 h2 {
   font-size: 7rem;
   font-family: "Oswald", sans-serif;
 }
 
+@media (max-width: 550px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
 h3 {
   font-size: 4rem;
   font-family: "Barlow Condensed", sans-serif;
+}
+
+@media (max-width: 550px) {
+  h3 {
+    font-size: 3rem;
+  }
 }
 
 ul {
@@ -675,7 +732,7 @@ ul {
   width: 100%;
   padding: 50px 0;
   background-color: #da695d;
-  color: white;
+  color: #FFFFFF;
 }
 
 .contact-section h1 {
@@ -692,9 +749,22 @@ ul {
           justify-content: space-between;
 }
 
+@media (max-width: 800px) {
+  .contact-form {
+    display: block;
+  }
+}
+
 .form {
   max-width: 48%;
   width: 100%;
+}
+
+@media (max-width: 800px) {
+  .form {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .contact-container {
@@ -703,14 +773,28 @@ ul {
   margin: 2%;
 }
 
+@media (max-width: 800px) {
+  .contact-container {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
 .form-control,
 textarea {
-  background-color: #fff;
+  background-color: #FFFFFF;
   color: #20335c;
   width: 70%;
   margin-bottom: 20px;
   padding: 2rem;
   border: none;
+}
+
+@media (max-width: 900px) {
+  .form-control,
+  textarea {
+    width: 100%;
+  }
 }
 
 .form-flex {
@@ -737,20 +821,32 @@ textarea {
 
 .list-item {
   line-height: 4;
-  color: white;
+  color: #FFFFFF;
+}
+
+@media (max-width: 550px) {
+  .list-item {
+    line-height: 3;
+  }
 }
 
 .list-item i {
-  color: white;
+  color: #FFFFFF;
 }
 
 .contact-text {
   letter-spacing: 1.9px;
-  color: white;
+  color: #FFFFFF;
+}
+
+@media (max-width: 550px) {
+  .contact-text {
+    letter-spacing: normal;
+  }
 }
 
 .contact-text a {
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
@@ -770,7 +866,7 @@ textarea {
 }
 
 .social-media-list li a {
-  color: #f74b38;
+  color: #20335c;
 }
 
 .social-media-list li {
@@ -787,6 +883,14 @@ textarea {
   cursor: pointer;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+}
+
+@media (max-width: 550px) {
+  .social-media-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
 }
 
 .social-media-list i:hover {
@@ -810,11 +914,11 @@ textarea {
 }
 
 hr {
-  border-color: white;
+  border-color: #FFFFFF;
 }
 
 .contact-icon i {
-  color: white;
+  color: #FFFFFF;
 }
 
 .send-button {
@@ -831,6 +935,12 @@ hr {
   padding: 1.5rem;
 }
 
+@media (max-width: 800px) {
+  .send-button {
+    width: 100%;
+  }
+}
+
 .button {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
@@ -838,7 +948,7 @@ hr {
 
 .button i {
   font-size: 3rem;
-  color: white;
+  color: #FFFFFF;
 }
 
 .send-text {
