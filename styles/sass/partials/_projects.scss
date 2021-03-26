@@ -1,12 +1,11 @@
 .projects {
-  background-color:$primaryColor;
-  color: rgb(32, 51, 92);
+  background-color:$baseColor;
+  color: $secondaryColor;
   padding: 15rem 0;
 }
 
 .projects-flex {
   display: grid;
-  // grid-template-columns: repeat(2, 1fr);
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 2rem;
   padding: 10rem 0;
