@@ -37,8 +37,6 @@ img {
 body {
   font-size: 2rem;
   font-family: $fontPoppins;
-  line-height: 1.6;
-  letter-spacing: 2px;
   overflow-x: hidden;
 
   @include tabletMQ2 {
