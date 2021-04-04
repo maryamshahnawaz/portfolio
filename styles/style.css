@@ -248,7 +248,10 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-style: italic;
+}
+
+.intro p {
+  color: #023d66;
 }
 
 .box-area {
@@ -411,7 +414,6 @@ header {
 .about-section {
   padding: 20rem 1rem;
   text-align: center;
-  color: #20335c;
   background-color: #eff9fb;
 }
 
@@ -487,7 +489,6 @@ header {
 .skills-section {
   padding: 10rem 0;
   background-color: #fff9f9;
-  color: #FFFFFF;
 }
 
 .iconName {
@@ -547,7 +548,6 @@ header {
 }
 
 .projects {
-  color: #20335c;
   padding: 15rem 0;
 }
 
@@ -758,8 +758,6 @@ img {
 body {
   font-size: 2rem;
   font-family: "Poppins", sans-serif;
-  line-height: 1.6;
-  letter-spacing: 2px;
   overflow-x: hidden;
 }
 
@@ -800,6 +798,12 @@ h1 {
 @media (max-width: 550px) {
   h1 {
     font-size: 4rem;
+  }
+}
+
+@media (max-width: 440px) {
+  h1 {
+    font-size: 3rem;
   }
 }
 
