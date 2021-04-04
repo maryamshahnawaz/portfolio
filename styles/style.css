@@ -759,6 +759,9 @@ body {
   font-size: 2rem;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+  color: #023d66;
 }
 
 @media (max-width: 800px) {
