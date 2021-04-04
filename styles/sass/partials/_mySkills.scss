@@ -1,11 +1,12 @@
 .skills-section {
-    padding: 6rem 0;
-    background-color:$primaryColor;
+    padding: 10rem 0;
+    background-color:#fff9f9;
     color: $baseColor;
 }
 
 .iconName {
-    color:white;
+    // color:white;
+    color:rgb(70, 61, 58);
 }
 
 .skills-section h2 {
@@ -13,13 +14,16 @@
 }
 
 .skill-icons {
+    max-width: 800px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-gap:4rem;
     padding: 4rem;
     @include tabletMQ2 {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
+    box-shadow: 0 0 10px rgb(32, 38, 43);
+    margin: 0 auto;
 }
 
 .individual-skill-section {
@@ -30,10 +34,11 @@
 }
 
 .skill {
-    color: $baseColor;
-    font-size: 10rem;
+    color:#023d66;
+    text-shadow: 2px 3px #fff, 5px 6px #8deeff;
+    font-size: 8rem;
     transition: all 0.6s ease;
     &:hover {
-        color:rgb(83, 254, 254);
+        color:#f17492;
     }
 }

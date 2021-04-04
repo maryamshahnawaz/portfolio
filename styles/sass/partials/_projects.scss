@@ -1,5 +1,4 @@
 .projects {
-  background-color:$baseColor;
   color: $secondaryColor;
   padding: 15rem 0;
 }
@@ -34,32 +33,99 @@ div.projects-flex:nth-child(even) div {
 .skillsUsed li {
   margin-right: 1.5rem;
   padding: 0 1rem;
-  color:$secondaryColor;
+  color:#f6a8bb;
+  text-shadow: 2px 3px #fff, 5px 6px #8deeff;
 }
 .projectLinks {
   margin-top: 3rem;
 }
-.projectLinks a {
-  text-decoration: none;
-  margin-right: 1.5rem;
-  padding: 1rem; 
-  background-color: $secondaryColor;
-  color:$baseColor;
-  font-size: 2.5rem;
-  &:hover {
-    background-color:rgba(48, 46, 77, 0.9)
-  }
-}
+
 
 span,
 span a {
-  color:#da695d;;
+  color:#5db7da;;
 }
 
 i {
   font-size: 5rem;
   transition: all 0.6 ease;
   &:hover {
-    color:$primaryColor;
+    color:#f17492;
   }
+}
+.outline {
+    background-color: transparent;
+    border: 2px solid #ffc4f6;
+
+    @include smallMQ {
+      margin-bottom: 2rem;
+    }
+  }
+
+    .anchorTag {
+      color: #666766;
+      padding: 10px 30px;
+      position: relative;
+      transition: transform .3s ease;
+      @include tabletMQ {
+        padding: 10px 20px;
+      }
+    }
+
+    .anchorTag img,
+    .anchorTag span {
+      position: relative;
+      /* z-index: 1; */
+      display: inline-block;
+      transition: transform .3s cubic-bezier(.86, 0, .07, 1), opacity .3s;
+      color: #3f3938;
+     
+    }
+
+
+    .arrow-right {
+      width: 2rem;
+    }
+
+    .anchorTag img {
+      max-width: 100%;
+      vertical-align: middle;
+    }
+
+    .workLinks {
+      margin-top: 3rem;
+
+      @include smallMQ {
+        display:flex;
+        flex-direction: column;
+        width:210px;
+      }
+    }
+
+    .workLinks a {
+      text-decoration: none;
+      margin-right: 1.5rem;
+      padding: 1.5rem;
+      @include tabletMQ {
+        padding:1rem;
+      }
+    }
+    .shadowBox {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-color: #ffd9dc;
+      z-index: -10;
+      transition: transform .2s ease;
+      
+    }
+    .center {
+      text-align: center;
+    }
+    
+.box {
+  box-shadow: 10px -10px #f6a8bb;
 }

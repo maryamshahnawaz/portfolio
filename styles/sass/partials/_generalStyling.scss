@@ -36,11 +36,12 @@ img {
 
 body {
   font-size: 2rem;
-  font-family: $fontOpenSans;
+  font-family: $fontPoppins;
   line-height: 1.6;
+  letter-spacing: 2px;
   overflow-x: hidden;
 
-  @include tabletMQ {
+  @include tabletMQ2 {
     overflow-x: hidden;
   }
   @include mobiletMQ {
@@ -54,25 +55,35 @@ body {
 h1 {
   font-size: 8.5rem;
   z-index: 100;
+  font-style: normal;
   line-height: 1.6;
-  font-family:$fontRoboto;
-  color: $secondaryColor;
-  @include smallMQ{
+  font-family:$fontPlayfair;
+  color: #023d66;
+  text-shadow: 2px 3px #fff, 5px 6px #8deeff;
+  @include mobiletMQ {
+    font-size:6rem;
+  }
+  @include smallMQ {
     font-size:4rem;
+  }
+  @include extarSmallMQ {
+    font-size: 3rem;
   }
 }
 
 h2 {
   font-size: 7rem;
-  font-family:$fontOswald;
+  font-family:$fontPlayfair;
+  color: #023d66;
+  text-shadow: 2px 3px #fff, 5px 6px #8deeff;
   @include smallMQ{
-    font-size:3rem;
+    font-size:5rem;
   }
 }
 
 h3 {
   font-size: 4rem;
-  font-family:$fontRoboto;
+  font-family:$fontPlayfair;
   @include smallMQ{
     font-size:3rem;
   }
@@ -82,5 +93,13 @@ ul {
   display:flex;
 }
 
+li {
+  list-style: none;
+}
 
+.img {
+  margin: 0 auto;
+  width: 60%;
+  height: 150px;
+}
 

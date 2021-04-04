@@ -2,12 +2,13 @@
   padding: 20rem 1rem;
   text-align: center;
   color:$secondaryColor;
+  background-color: #eff9fb;
 }
 
 .about-section-flex {
   display: flex;
   justify-content: space-between;
-  @include tabletMQ {
+  @include tabletMQ2 {
     display:block;
   }
 }
@@ -22,7 +23,7 @@
 .about-me {
   width: 30%;
   min-width: 350px;
-  @include tabletMQ {
+  @include tabletMQ2 {
     margin: 2rem auto;
     width:50%;
   }
@@ -33,11 +34,7 @@
 
 .about-me img {
   width: 100%;
-  border-radius: 50%;
-  box-shadow: 30px -30px $primaryColor;
-  @include tabletMQ {
-    box-shadow: 15px -15px $primaryColor;
-  }
+  box-shadow:10px -10px #f6a8bb;
   @include smallMQ {
     width:80%;
   }
@@ -48,7 +45,7 @@
   margin-left: 6%;
   padding: 2rem;
   text-align: left;
-  @include tabletMQ {
+  @include tabletMQ2 {
     width:100%;
     margin-left: 0;
   }

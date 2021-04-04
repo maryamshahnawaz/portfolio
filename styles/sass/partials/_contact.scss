@@ -1,190 +1,96 @@
-.contact-section {
-  width: 100%;
-  padding: 50px 0;
-  background-color:$primaryColor;
-  color:$baseColor;
-}
+.section {
+      background-color: #fff9f9;
+    }
+     .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
 
-.contact-section h1 {
-  text-align: center;
-  color:white;
-}
+    .info {
+      width: 45%;
+      text-align: left;
+      @include mobiletMQ {
+        width:80%;
+        margin:0 auto 4rem auto;
+      
+      }
+    }
 
-.contact-form {
-  display: flex;
-  justify-content: space-between;
-  @include tabletMQ2 {
-    display:block;
-  }
-}
+    .info .social-media i {
+      font-size: 40px;
+      padding: 2rem;
+      color: #023d66;
+      text-shadow: 2px 3px #fff, 5px 6px #8deeff;
+      &hover {
+        color:#f17492;
+      }
+    }
 
-.form {
-  max-width: 48%;
-  width: 100%;
-  @include tabletMQ2 {
-    max-width:100%;
-    width:100%;
-  }
-}
+    .info .social-media {
+      display: flex;
+    }
 
-.contact-container {
-  max-width: calc(100% - 52%);
-  width: 80%;
-  margin: 2%;
-  @include tabletMQ2{
-    max-width:100%;
-    width:100%;
-  }
-}
+    .form {
+      width: calc(100% - 50%);
+      margin-left: 2%;
+      @include mobiletMQ {
+        width:80%;
+        margin: 0 auto 3rem auto;
 
-.form-control,
-textarea {
-  // background-color: #cdf5f3;
-  background-color: $baseColor;
-  color:$secondaryColor;
-  width: 70%;
-  margin-bottom: 20px;
-  padding: 2rem;
-  border: none;
-  @include tabletMQ {
-    width:100%;
-  }
-}
+      }
+    }
 
-.form-flex {
-  display: flex;
-  flex-direction: column;
-  border: none;
-}
+    .fieldContainer {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
 
-/* Location, Phone, Email Section */
-.contact-list {
-  display: flex;
-  flex-direction: column;
-}
+    input {
+      width: 100%;
+      padding: 2rem;
+      margin-bottom: 1rem;
+      border: none;
+      border-bottom: 3px solid #77e3f9;
+      ;
+    }
 
-.list-item {
-  line-height: 4;
-  color:$baseColor;
-  @include smallMQ {
-    line-height: 3;
-  }
-}
+    .fieldContainer textarea {
+      border: none;
+      margin-bottom: 2rem;
+      text-align: left;
+      padding: 2rem;
+      border: none;
+      border-bottom: 3px solid #47cae4;
+      
+    }
 
-.list-item i {
-  color:$baseColor;
-}
+    .fieldContainer button {
+      display: inline-block;
+      width: 30%;
+      margin: 0 auto;
+      background-color: rgb(255, 217, 220);
+      padding: 1rem;
+      font-size: 2.5rem;
+      border: none;
+      border: 3px solid #eff9fb;
+      :hover {
+        color:#f17492;
+      }
+    }
 
-.contact-text {
-  letter-spacing: 1.9px;
-  color:$baseColor;
-  @include smallMQ {
-    letter-spacing: normal;
-  }
-}
-.contact-text a {
-  color: $baseColor;
-  text-decoration: none;
-  transition-duration: 0.2s;
-}
-
-.contact-text a:hover {
-  color: #a6e8e5;
-  text-decoration: none;
-}
-
-/* Social Media Icons */
-.social-media-list {
-  position: relative;
-  font-size: 2.3rem;
-  text-align: center;
-  width: 100%;
-}
-
-.social-media-list li a {
-  color: $secondaryColor;
-}
-
-.social-media-list li {
-  position: relative;
-  top: 0;
-  left: -20px;
-  display: inline-block;
-  height: 80px;
-  width: 80px;
-  margin: 10px auto;
-  line-height: 85px;
-  border-radius: 50%;
-  background-color:$secondaryColor;
-  cursor: pointer;
-  transition: all .2s ease-in-out;
-  @include smallMQ {
-    height:60px;
-    width:60px;
-    line-height: 60px;
-  }
-}
-
-.social-media-list i:hover {
-  color:$baseColor;
-}
-
-.social-media-list li:hover {
-  background-color: rgba($color: #aeebfe, $alpha: 1.0);
-}
-
-.social-media-list li:hover:after {
-  opacity: 1;
-  transform: scale(1.12);
-  transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
-}
-
-.social-media-list li:hover a {
-  color: #66d0cc;
-}
-
-hr {
-  border-color:$baseColor;
-}
-
-.contact-icon i {
-  color:$baseColor;
-  @include smallMQ{
-    font-size:3rem;
-  }
-}
-
-.send-button {
-  background-color:$secondaryColor;
-  border: 0;
-  margin-top: 15px;
-  margin-bottom: 30px;
-  height: 50px;
-  width: 70%;
-  overflow: hidden;
-  transition: all .2s ease-in-out;
-  color: white;
-  padding:1.5rem;
-  @include tabletMQ2 {
-    width:100%;
-  }
-}
-
-.button {
-  transition: all .2s ease-in-out;
-}
-
-.button i {
-  font-size: 3rem;
-  color:$baseColor;
-}
-
-.send-text {
-  display: block;
-  margin-top: 10px;
-}
-
-.button:hover {
-  transform: translate3d(0px, -29px, 0px);
-  color: #a6e8e5;
-}
+    .gmail a {
+      text-decoration: none;
+      color: #023d66;
+      text-shadow: 2px 3px #fff, 5px 6px #8deeff;
+      &hover{
+        color:#f17492;
+      }
+    }
+    .container {
+      @include mobiletMQ  {
+        display: flex;
+        flex-direction: column;
+      }
+    }

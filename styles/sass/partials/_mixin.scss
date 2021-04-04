@@ -1,5 +1,5 @@
 @mixin tabletMQ {
-  @media (max-width: 900px) {
+  @media (max-width: 980px) {
     @content;
   }
 }
@@ -18,6 +18,12 @@
 
 @mixin smallMQ {
   @media (max-width: 550px) {
+    @content;
+  }
+}
+
+@mixin extarSmallMQ {
+  @media (max-width: 440px) {
     @content;
   }
 }

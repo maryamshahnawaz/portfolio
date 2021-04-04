@@ -1,15 +1,7 @@
 footer {
-  padding: 2rem;
-  background-color:$secondaryColor;
-  text-align: center;
-  color: $baseColor;
-  font-size: 3rem;
-  @include smallMQ {
-    font-size: 2rem;
-    padding: 1rem;
-  }
-}
-
-footer a{
-  color:$primaryColor;
-}
+      padding: 2rem;
+      background-color: #023d66;
+      text-align: center;
+      color:#4ee4ff;
+    }
+  

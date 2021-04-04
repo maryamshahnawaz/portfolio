@@ -17,14 +17,12 @@
   <link rel="stylesheet" href="./styles/style.css">
 
   <!-- Google font awesome -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Open+Sans&family=Oswald&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display:wght@500&family=Poppins&display=swap"
     rel="stylesheet">
-
-  <title>Portfolio</title>
+  <title>Maryam Shahnawaz Front End Developer Portfolio</title>
 </head>
 <body>
-
   <!-- Header Section -->
   <header>
     <div class="intro">
@@ -48,12 +46,33 @@
   </header>
 
   <main>
+    <nav class="header" id="myHeader">
+      <div class="wrapper flex-container">
+        <p>
+          <img src="./assets/logo.png" alt="" class="asad">
+        </p>
+        <ul class="nav-bar">
+          <li>
+            <a href="#about">About Me</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <!-- About Me Section -->
     <section class="about-section" id="about" data-aos="zoom-in-up" data-aos-easing="ease" data-aos-duration="1500">
       <h2>About Me</h2>
       <div class="wrapper about-section-flex">
         <div class="about-me">
-          <img src="./assets/Maryam.png" alt="Maryam's Front-end Web development Portfolio" class="maryam">
+          <img src="./assets/maryam.jpeg" alt="Maryam's Front-end Web development Portfolio" class="maryam">
         </div>
         <div class="desc-about-me">
           <p>Hi! My name is Maryam Shahnawaz, former dispatcher turned web-developer from a dull day job taking to
@@ -74,7 +93,13 @@
     <!-- Skills Section -->
     <section class="skills-section">
       <div class="wrapper">
-        <h2>Skills</h2>
+        <div class="center">
+          <span>What I use</span>
+          <h2>Skills & Tools</h2>
+        </div>
+        <div class="img">
+          <img src="./assets/divider.png" alt="">
+        </div>
         <div class="skill-icons" aos-init aos-animate data-aos="fade-up" data-aos-duration="1500">
 
           <div class="individual-skill-section">
@@ -140,7 +165,13 @@
     <!-- Project Section -->
     <section class="projects">
       <div class="wrapper">
-
+        <div class="center">
+          <span>What I made</span>
+          <h2>My Works</h2>
+          <div class="img">
+            <img src="./assets/divider.png" alt="">
+          </div>
+        </div>
         <!-- NUMBER ONE PROJECT-->
         <div class="projects-flex" data-aos="fade-right" data-aos-duration="1500">
           <div class="projects-img">
@@ -165,12 +196,25 @@
               <li><i class="devicon-firebase-plain" aria-hidden="true"></i>
               </li>
             </ul>
-            <ul class="projectLinks">
+            <!-- <ul class="projectLinks">
               <li>
                 <a href="https://github.com/Page-Turners/project-4-page-turners">Github</a>
               </li>
               <li><a href="https://page-turner.netlify.app/">View Live</a></li>
-            </ul>
+            </ul> -->
+            <div class="workLinks">
+              <a href="https://github.com/Page-Turners/project-4-page-turners" target="_blank"
+                class="anchorTag outline">
+                <span>Git Hub</span>
+                <img src="./assets/noun-arrow.svg" alt="" class="arrow-right">
+                <div class="shadowBox"></div>
+              </a>
+              <a href="https://page-turner.netlify.app/" target="_blank" class="anchorTag outline">
+                <span>View Live</span>
+                <img src="./assets/noun-arrow.svg" alt="" class="arrow-right">
+                <div class="shadowBox"></div>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -197,13 +241,22 @@
               <li><i class="devicon-sass-original" aria-hidden="true"></i>
               </li>
             </ul>
-            <ul class="projectLinks">
-              <li>
-                <a href="https://github.com/maryam-melissa">Github</a>
-              </li>
-              <li><a href="https://flix-finder-app.netlify.app/landingpage">View Live</a></li>
-            </ul>
+
+
+            <div class="workLinks">
+              <a href="https://github.com/maryam-melissa" target="_blank" class="anchorTag outline">
+                <span>Git Hub</span>
+                <img src="./assets/noun-arrow.svg" alt="" class="arrow-right">
+                <div class="shadowBox"></div>
+              </a>
+              <a href="https://flix-finder-app.netlify.app/landingpage" target="_blank" class="anchorTag outline">
+                <span>View Live</span>
+                <img src="./assets/noun-arrow.svg" alt="" class="arrow-right">
+                <div class="shadowBox"></div>
+              </a>
+            </div>
           </div>
+
         </div>
 
         <!-- NUMBER THREE PROJECT-->
@@ -228,12 +281,24 @@
               <li><i class="devicon-firebase-plain" aria-hidden="true"></i>
               </li>
             </ul>
-            <ul class="projectLinks">
+            <!-- <ul class="projectLinks">
               <li>
                 <a href="https://github.com/maryamshahnawaz/plant-house-app">Github</a>
               </li>
               <li><a href="https://plant-house.netlify.app/">View Live</a></li>
-            </ul>
+            </ul> -->
+            <div class="workLinks">
+              <a href="https://github.com/maryamshahnawaz/plant-house-app" target="_blank" class="anchorTag outline">
+                <span>Git Hub</span>
+                <img src="./assets/noun-arrow.svg" alt="" class="arrow-right">
+                <div class="shadowBox"></div>
+              </a>
+              <a href="https://plant-house.netlify.app/" target="_blank" class="anchorTag outline">
+                <span>View Live</span>
+                <img src="./assets/noun-arrow.svg" alt="" class="arrow-right">
+                <div class="shadowBox"></div>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -257,86 +322,108 @@
 
 
             </ul>
-            <ul class="projectLinks">
+            <!-- <ul class="projectLinks">
               <li>
                 <a href="https://github.com/blaire-maryam/blaire-maryam-project-one">Github</a>
               </li>
               <li><a href="https://under-the-sea-my-site.netlify.app/">View Live</a></li>
-            </ul>
+            </ul> -->
+            <div class="workLinks">
+              <a href="https://github.com/blaire-maryam/blaire-maryam-project-one" target="_blank"
+                class="anchorTag outline">
+                <span>Git Hub</span>
+                <img src="./assets/noun-arrow.svg" alt="" class="arrow-right">
+                <div class="shadowBox"></div>
+              </a>
+              <a href="https://under-the-sea-my-site.netlify.app/" target="_blank" class="anchorTag outline">
+                <span>View Live</span>
+                <img src="./assets/noun-arrow.svg" alt="" class="arrow-right">
+                <div class="shadowBox"></div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-section">
-      <h1>GET IN TOUCH!</h1>
-      <div class="contact-form wrapper">
-        <form class="form" name="contact" method="POST" data-netlify="true">
-          <div class="form-flex">
-            <label for="name">Name </label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
-            <label for="email">Email </label>
-            <input type="email" class="form-control" id="email" placeholder="Enter Your Email">
-          </div>
-          <div class="form-flex">
-            <label for="message-me">Message me</label>
-            <textarea class="form-control" rows="10" placeholder="Message me here" id="message-me"></textarea>
-          </div>
-          <button class="btn  send-button" type="submit">
-            <div class="button">
-              <i class="fa fa-paper-plane zoo" aria-hidden="true"></i><span class="send-text">SEND</span>
+    <section class="section">
+      <div class="center">
+        <p>Hello</p>
+        <h2>Stay In Touch</h2>
+        <div class="img">
+          <img src="./assets/divider.png" alt="">
+        </div>
+      </div>
+      <div class="wrapper aos-animate" data-aos="fade-up" data-aos-duration="1500" visibilty="visible">
+        <div class="container">
+          <div class="info aos-animate" data-aos="fade-up" data-aos-duration="1500" visibilty="visible">
+            <h4>Connect With Me</h4>
+            <p>Thanks for visiting!
+              If you're interested in collaborating on a project or looking to chat further, please feel free to contact
+              me. I'd love
+              to hear from you!</p>
+            <div class=" social-media">
+              <li data-aos="fade-up" data-aos-duration="900" data-aos-delay="200" aria-label="linked in"
+                target="_blank">
+                <a href="https://twitter.com/MaryamShahnawa2"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li data-aos="fade-up" data-aos-duration="900" data-aos-delay="300" aria-label="linked in"
+                target="_blank">
+                <a href="https://www.linkedin.com/in/maryam-shahnawaz-259728203/"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li data-aos="fade-up" data-aos-duration="900" data-aos-delay="400" aria-label="linked in"
+                target="_blank">
+
+                <a href="https://maryum-shahnawaz.medium.com/"><i class="fab fa-medium"></i></a>
+              </li>
+              <li data-aos="fade-up" data-aos-duration="900" data-aos-delay="500" aria-label="linked in"
+                target="_blank">
+                <a href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram"></i></a>
+              </li>
+
             </div>
-          </button>
-        </form>
-        <div class="contact-container">
-          <ul class="contact-list">
-            <li class="list-item">
-              <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
-              <span class="contact-text place">Toronto |
-                Ontario</span></i>
+            <li data-aos="fade-up" data-aos-duration="900" data-aos-delay="600" aria-label="linked in" target="_blank">
+              <p class="gmail"><a href="mailto:maryumshahnawaz20@gmail.com" id="email">maryumshahnawaz20@gmail.com</a>
+              </p>
             </li>
 
-            <li class="list-item">
-              <i class="fas fa-phone" aria-hidden="true"></i>
-              <span class="contact-text phone"><a href="tel:647-464-5466"
-                  title="Give me a call">647-464-5466</a></span></i>
-            </li>
+          </div>
 
-            <li class="list-item">
-              <i class="fas fa-envelope-square" aria-hidden="true"></i>
-              <span class="contact-text gmail">
-                <a href="mailto:maryamshahnawaz44@gmail.com" title="Send me an email">maryamshahnawaz44@gmail.com</a>
-              </span>
-              </i>
-            </li>
-          </ul>
 
-          <hr>
-          <ul class="social-media-list">
-            <li>
-              <a href="https://github.com/maryamshahnawaz" class="contact-icon">
-                <i class="fab fa-github" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/maryam-shahnawaz-259728203/" class="contact-icon">
-                <i class="fab fa-linkedin-in" aria-hidden="true"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/MaryamShahnawa2" class="contact-icon">
-                <i class="fab fa-twitter" aria-hidden="true"></i>
-              </a>
-            </li>
+          <!-- <label>Email:</label>
+          <input type="email" name="email" />
+          <label>Message:</label>
+          <input type="text" name="message" />
+          <button id="my-form-button">Submit</button>
+          <p id="my-form-status"></p>
+          </form> -->
 
-            <li>
-              <a href="https://codepen.io/maryum-shahnawaz/pen/KKNPqpr" class="contact-icon">
-                <i class="fab fa-codepen" aria-hidden="true"></i>
-              </a>
-            </li>
-          </ul>
-          <hr>
+
+
+
+          <form id="my-form" action="https://formspree.io/f/xpzkzpdl" method="POST" class="form aos-animate"
+            data-aos="fade-up" data-aos-duration="1500">
+            <h4>Message Me</h4>
+            <div class="fieldContainer">
+              <div class="row">
+                <label for="name" class="sr-only"></label>
+                <input type="text" name="name" id="name" placeholder="Name*" required />
+              </div>
+              <div class="row">
+                <label for="email" class="sr-only"></label>
+                <input type="email" name="email" id="email" placeholder="Email*" required />
+              </div>
+            </div>
+            <div class="fieldContainer">
+              <label for="textarea" class="sr-only"></label>
+              <textarea name="textarea" id="" cols="30" rows="10" placeholder="Messege Me*" required></textarea>
+              <button id="my-form-button">Submit</button>
+              <p id="my-form-status"></p>
+            </div>
+          </form>
+
+
         </div>
       </div>
     </section>
@@ -344,8 +431,8 @@
 
   <!-- Footer Section -->
   <footer>
-    <p>Made by Maryam Copy Right@ <a href="https://junocollege.com/">Juno</a>
-      College</p>
+    <p>Created by Maryam Shahnawaz 2021
+    </p>
   </footer>
   <!-- Animation Library Link -->
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
@@ -354,5 +441,7 @@
       offset: 400
     });
   </script>
+  <!-- Main Java Script file -->
+  <script src="./app.js"></script>
 </body>
 </html>
