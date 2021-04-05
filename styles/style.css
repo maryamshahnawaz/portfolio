@@ -950,6 +950,10 @@ input {
   color: #f17492;
 }
 
+.gmail {
+  font-size: 1.6rem;
+}
+
 .gmail a {
   text-decoration: none;
   color: #023d66;
