@@ -57,8 +57,9 @@ h1 {
   z-index: 100;
   font-style: normal;
   line-height: 1.6;
-  font-family:$fontPlayfair;
-  color: #023d66;
+  font-family:$fontCourgette;
+  color: #f41554;
+  // color: #4d4f23;
   text-shadow: 2px 3px #fff, 5px 6px #8deeff;
   @include mobiletMQ {
     font-size:6rem;
@@ -73,7 +74,7 @@ h1 {
 
 h2 {
   font-size: 7rem;
-  font-family:$fontPlayfair;
+  font-family:$fontCourgette;
   color: #023d66;
   text-shadow: 2px 3px #fff, 5px 6px #8deeff;
   @include smallMQ{
@@ -83,7 +84,7 @@ h2 {
 
 h3 {
   font-size: 4rem;
-  font-family:$fontPlayfair;
+  font-family:$fontCourgette;
   @include smallMQ{
     font-size:3rem;
   }

@@ -613,7 +613,7 @@ i:hover {
 
 .outline {
   background-color: transparent;
-  border: 2px solid #ffc4f6;
+  border: 2px solid #f488ab;
 }
 
 @media (max-width: 550px) {
@@ -650,15 +650,6 @@ i:hover {
   color: #3f3938;
 }
 
-.arrow-right {
-  width: 2rem;
-}
-
-.anchorTag img {
-  max-width: 100%;
-  vertical-align: middle;
-}
-
 .workLinks {
   margin-top: 3rem;
 }
@@ -686,21 +677,6 @@ i:hover {
   .workLinks a {
     padding: 1rem;
   }
-}
-
-.shadowBox {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  width: 100%;
-  height: 100%;
-  display: block;
-  background-color: #ffd9dc;
-  z-index: -10;
-  -webkit-transition: -webkit-transform .2s ease;
-  transition: -webkit-transform .2s ease;
-  transition: transform .2s ease;
-  transition: transform .2s ease, -webkit-transform .2s ease;
 }
 
 .center {
@@ -757,7 +733,7 @@ img {
 
 body {
   font-size: 2rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
   line-height: 1.6;
   letter-spacing: 1.5px;
@@ -787,8 +763,8 @@ h1 {
   z-index: 100;
   font-style: normal;
   line-height: 1.6;
-  font-family: "Playfair Display", serif;
-  color: #023d66;
+  font-family: "Courgette", sans-serif;
+  color: #f41554;
   text-shadow: 2px 3px #fff, 5px 6px #8deeff;
 }
 
@@ -812,7 +788,7 @@ h1 {
 
 h2 {
   font-size: 7rem;
-  font-family: "Playfair Display", serif;
+  font-family: "Courgette", sans-serif;
   color: #023d66;
   text-shadow: 2px 3px #fff, 5px 6px #8deeff;
 }
@@ -825,7 +801,7 @@ h2 {
 
 h3 {
   font-size: 4rem;
-  font-family: "Playfair Display", serif;
+  font-family: "Courgette", sans-serif;
 }
 
 @media (max-width: 550px) {
