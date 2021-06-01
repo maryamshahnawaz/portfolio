@@ -28,7 +28,7 @@
       <h1>Maryam Shahnawaz</h1>
       <p>Front-End Developer</p>
     </div>
-    <a href="#about" class="scroll-down">
+    <a href="#about" class="scroll-down" aria-label="Go to About me page">
     </a>
     <div class="animation-area">
       <ul class="box-area">
@@ -72,17 +72,16 @@
           <img src="./assets/maryam.jpeg" alt="Maryam's Front-end Web development Portfolio" class="maryam">
         </div>
         <div class="desc-about-me">
-          <p>Hi! My name is Maryam Shahnawaz, former dispatcher turned web-developer from a dull day job taking to
+          <p>Hi! My name is Maryam Shahnawaz, former dispatcher turned web-developer. From a dull day job to
             writing lines of
-            codes and bringing my imagination to life, my passion is combining code and my creativity to create websites
-            and apps
-            that can convey my passion form work. One of the best parts of coding is that it’s a universal language that
+            codes and bringing my imagination to life, my passion is combine code and my creativity to create websites
+            and apps.
+            One of the best parts of coding is that it’s a universal language that
             everyone
             can read and speak regardless of cultural backgrounds it’s something that can truly unite people. I’m eager
-            to find
-            employment and pour all my ideas and effort into creating the best websites I can. Drop me a line and/or
+            to find pour and all my ideas and effort into creating the best websites I can. Drop me a line and/or
             your favourite
-            restaurant in GTA in the contact form below or check me out at:</p>
+            restaurant in GTA.</p>
         </div>
       </div>
     </section>
@@ -170,14 +169,42 @@
         <!-- NUMBER ONE PROJECT-->
         <div class="projects-flex" data-aos="fade-right" data-aos-duration="1500">
           <div class="projects-img">
+            <img src="./assets/synchronized Time.png" alt="An image of Page Turner app">
+          </div>
+          <div class="projects-info">
+            <h3>synchronized Clock</h3>
+            <p>Synchronized clocks is an app created using React. One clock is analog and one is digital both are
+              completely
+              synchronized and update to match the other.
+            </p>
+            <ul class="skillsUsed">
+              <li><i class="devicon-html5-plain" aria-hidden="true"></i></li>
+              <li><i class="devicon-css3-plain" aria-hidden="true"></i>
+              </li>
+              <li><i class="devicon-react-original" aria-hidden="true"></i>
+              </li>
+            </ul>
+            <div class="workLinks">
+              <a href="https://github.com/maryamshahnawaz/clock-project" target="_blank" class="anchorTag outline">
+                <span>Git Hub</span>
+              </a>
+              <a href="https://clock-react-project.netlify.app/" target="_blank" class="anchorTag outline">
+                <span>View Live</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- NUMBER TWO PROJECT-->
+        <div class="projects-flex" data-aos="fade-right" data-aos-duration="1500">
+          <div class="projects-img">
             <img src="./assets/page-turner-1.png" alt="An image of Page Turner app">
           </div>
           <div class="projects-info">
             <h3>Page Turners</h3>
-            <p>Page-turner is a reading list app which has 3 lists that help you keep track of which books your
+            <p>Page-turner is a reading list app which has 3 lists that help you keep track of which books you're
               currently reading,
-              which books you’ve finished reading and which books you’ve favourited. This project uses the Google book
-              api and was
+              which books you’ve finished reading and which books you’ve favourited. This project uses the Google Book
+              API and was
               created in collaboration with <span><a href="https://goofy-mccarthy-446f5a.netlify.app/">@Tom Milton,</a>
               </span><span><a href="https://jessonthenet.com">@Jess Lau</a></span> and <span><a
                   href="https://ragulan-portfolio.netlify.app/">@Ragulan Ravi</a></span>
@@ -203,7 +230,7 @@
           </div>
         </div>
 
-        <!-- NUMBER TWO PROJECT-->
+        <!-- NUMBER THREE PROJECT-->
         <div class="projects-flex" data-aos="fade-left" data-aos-duration="1000">
           <div class="projects-img">
             <img src="./assets/flix-finder-1.png" alt="An image of movie finder app called flix finder">
@@ -237,7 +264,7 @@
 
         </div>
 
-        <!-- NUMBER THREE PROJECT-->
+        <!-- NUMBER FOUR PROJECT-->
         <div class="projects-flex" data-aos="fade-right" data-aos-duration="1000">
           <div class="projects-img">
             <img src="./assets/plant-store-1.png" alt="An image of e-commerce plant house app">
@@ -270,7 +297,7 @@
           </div>
         </div>
 
-        <!-- NUMBER FOUR PROJECT-->
+        <!-- NUMBER FIVE PROJECT-->
         <div class="projects-flex" data-aos="fade-left" data-aos-duration="1500">
           <div class="projects-img">
             <img src="./assets/under-the-sea-1.png" alt="An image of website called under the sea its about aquarium">
@@ -301,6 +328,8 @@
             </div>
           </div>
         </div>
+
+
       </div>
     </section>
 
@@ -315,8 +344,8 @@
       <div class="wrapper aos-animate" data-aos="fade-up" data-aos-duration="1500" visibilty="visible">
         <div class="container">
           <div class="info aos-animate" data-aos="fade-up" data-aos-duration="1500" visibilty="visible">
-            <p>Thanks for visiting my Portfolio, If you would like to get in touch regarding any job offers, positions
-              or opportunities please feel free to contact me</p>
+            <p>Thanks for visiting my website, If you would like to get in touch regarding any opportunities at your
+              company, please feel free to contact me</p>
             <div class=" social-media">
               <li data-aos="fade-up" data-aos-duration="900" data-aos-delay="200" aria-label="linked in"
                 target="_blank">
@@ -347,17 +376,17 @@
             <h4>Message Me</h4>
             <div class="fieldContainer">
               <div class="row">
-                <label for="name" class="sr-only"></label>
+                <label for="name" class="sr-only">Name:</label>
                 <input type="text" name="name" id="name" placeholder="Name*" required />
               </div>
               <div class="row">
-                <label for="email" class="sr-only"></label>
-                <input type="email" name="email" id="email" placeholder="Email*" required />
+                <label for="email" class="sr-only">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email*" required aria-hidden=true />
               </div>
             </div>
             <div class="fieldContainer">
-              <label for="textarea" class="sr-only"></label>
-              <textarea name="textarea" id="" cols="30" rows="10" placeholder="Messege Me*" required></textarea>
+              <label for="textarea" class="sr-only">Textarea:</label>
+              <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Message Me*" required></textarea>
               <button id="my-form-button">Submit</button>
               <p id="my-form-status"></p>
             </div>

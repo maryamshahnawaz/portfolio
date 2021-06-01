@@ -251,7 +251,9 @@ header {
 }
 
 .intro p {
-  color: #023d66;
+  color: #027cd3;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .box-area {
@@ -492,7 +494,7 @@ header {
 }
 
 .iconName {
-  color: #463d3a;
+  color: black;
 }
 
 .skills-section h2 {
@@ -537,7 +539,6 @@ header {
 
 .skill {
   color: #023d66;
-  text-shadow: 2px 3px #fff, 5px 6px #8deeff;
   font-size: 8rem;
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
@@ -598,7 +599,7 @@ div.projects-flex:nth-child(even) div {
 
 span,
 span a {
-  color: #5db7da;
+  color: #13285e;
 }
 
 i {
@@ -899,6 +900,7 @@ input {
   padding: 2rem;
   margin-bottom: 1rem;
   border: none;
+  outline-width: 0;
   border-bottom: 3px solid #77e3f9;
 }
 
@@ -908,6 +910,7 @@ input {
   text-align: left;
   padding: 2rem;
   border: none;
+  outline-width: 0;
   border-bottom: 3px solid #47cae4;
 }
 
@@ -984,13 +987,13 @@ nav {
 
 .nav-bar a {
   text-decoration: none;
-  padding: 2rem;
+  padding: 3rem;
   -webkit-transition: 0.15s all ease-in;
   transition: 0.15s all ease-in;
-  color: #f6a8bb;
+  color: #f53461;
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
-  font-weight: 200;
+  font-weight: 500;
   font-size: 2.5rem;
 }
 
